@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 9, 2021, 8:58:43 PM
+    Author     : square
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 100%;  
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 75%;
+    margin: auto;
+}
+header {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-title {
+    margin: 1rem 0;
+}
+
+table {
+    width: 100%;
+
+}
+.container {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2rem 2fr 1fr 0.8fr 0.7fr 1.5fr;
+    text-align: left;
+    height: 3rem;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
+}
+td {
+    display: flex;
+    gap: 1rem;
+    padding-left: 10px; 
+    
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.input-group input, .input-group select {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-left: 8px;
+    
+}
+
+label {
+    margin-bottom: 8px;  
+}
+a, button {
+    text-decoration: none;
+    color: white;
+    
+    align-self: flex-end; 
+    padding: 8px;
+    border-radius: 4px;
+}
+a.nav-button {
+    background: lightsteelblue;
+}
+a.delete-button {
+    background: red;
+}
+a.edit-button, a.view-button {
+    background: gray;
+}
+button {
+    background: green
+}
+.warning {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+}
+
+.created {
+    background: green;
+}
+
+.error {
+    background: red;
+}

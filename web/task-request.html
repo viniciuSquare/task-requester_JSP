@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Solicitar nova tarefa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/TaskRequester/css/style.css"/>
+    </head>
+    <body>
+        <main>
+             <form action="addTaskController.jsp" method="post" class="container">
+                 <div class="space-between">
+                     <h1 id="page-title">Solicitar serviço</h1>                
+                     <a class ='nav-button' href="/TaskRequester">Início</a>
+                 </div>
+                 
+                <div class="input-group">
+                  <label for="subject">Assunto</label>
+                  <input type="text" name="subject" id="assunto" placeholder="digite o assunto da demanda">
+                </div>
+                <div class="input-group">
+                  <label for="description">Decrição</label>
+                  <textarea name="description" id="descricao" cols="30" rows="10" placeholder="Descreva a solicitação o mais detalhado possível! Isso ajudará na resolução do problema">  </textarea>
+                </div>
+                <div class="input-group">
+                    <label for="category">Categoria</label>
+                    <select name="category" id="category">
+                      <option value="Manutencao">Manutenção</option>
+                      <option value="Suporte">Suporte</option>
+                      <option value="gestao">Gestão</option>
+
+                    </select>
+                </div>
+                <div class="input-group">
+                  <label for="executor">Executor</label>
+                  <input type="text" name="executor" id="executor" placeholder="A quem esse pedido é destinado"/>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </main>
+       
+    </body>
+</html>
